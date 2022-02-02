@@ -1,0 +1,236 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%
+% Original author:
+% Syed Misbah Ahmed (http://syedmisbah.github.io)
+%
+% Original repository:
+% 
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Nidarshan}{Siddegowda}{ 
+{nidarshans@gmail.com} | 408-896-0930
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\descript{B.S in Computer Science}
+\descript{Minor in Physics}
+\location{Purdue University, IN, USA}
+August 2020 -  \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming Languages}
+\textbullet{}Python \\
+\textbullet{} Java \\
+\textbullet{} C++ \\
+\textbullet{} C \\
+\textbullet{} NodeJS \\
+\textbullet{} PHP
+\newline
+\subsection{Frameworks/Tools}
+\textbullet{}Git \\
+\textbullet{}Docker \\
+\textbullet{}Jenkins \\
+\textbullet{}Flask \\
+\textbullet{}MongoDB \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+OOP Programming \\
+C Programming \\
+Data Structures \& Algorithms \\
+Computer Architecture \\
+Systems Programming\\
+Data Mining/Machine Learning\\
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/nidarshans}{\custombold{nidarshans}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/nidarshan-siddegowda-a70039193}{\custombold{Nidarshan Siddegowda}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Pinger}
+\descript{| Software Engineer Intern}
+\location{Jan 2022 –  | San Jose, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Worked in an AGILE environment to write and execute XCUI and Espresso tests in order to maintain integrity of the product
+\item Integrated test automation into CI/CD pipelines and Jenkins server
+\item Responsible for backend build system (Jenkins pipelining), development environment (Vagrant), and tools (Docker)
+\item Responsible for designing and implementing internal tools that helped increase backend team productivity on a day-to-day basis
+
+\end{tightemize}
+\sectionsep
+\runsubsection{Vex Robotics}
+\descript{| Programming Lead}
+\location{August 2016 – May 2020 | San Ramon, CA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item 4 years of experience programming robots in C/C++ using Purdue PROS OS
+\item Developed PID controllers for robots to provide fluid and consistent motion
+\item Implemented autonomous movement robots that enabled our team to win points and qualify to World Championship
+
+\end{tightemize}
+% Add more experience here
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH/PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{CloudFlare Blog Platform}
+\descript{|}
+%Description below
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designed and built a blog platform with a serverless API using CloudFlare's Workers API
+\item Backend utilizes the Workers KV namespace to store and retrieve blog posts
+\item Implemented frontend using React
+\end{tightemize}
+\sectionsep
+\runsubsection{BluBlock Blockchain Application}
+\descript{|}
+%Description below
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item A decentralized ledger that keeps track of transactions
+\item Implemented Python's hashlib library for SHA256 functionality
+\item Efficient hashing verification using Merkle Trees
+\item OpenSSL for RSA signatures/encryption and signature verification
+\item Utilized Python Flask for routing
+\end{tightemize}
+\sectionsep
+\runsubsection{Card Game Simulator}
+\descript{|}
+%Description below
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Implemented Socket.IO library for real-time, bidirectional communication
+\item Frontend developed using React, HTML/CSS, and jQuery
+\item Backend developed using NodeJS
+\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Extracurricular} 
+
+\runsubsection{Purdue LaunchPad}
+\descript{| Mentor}
+%Description below
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Guided students through their project ideas from start to finish
+\item Utilized my programming expertise to help students build and debug their project efficiently
+\item Hosted workshops to teach fellow mentees about software design processes and networking essentials (TCP/IP, socket programming, etc)
+\end{tightemize}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
